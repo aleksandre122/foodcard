@@ -1,109 +1,143 @@
-body{
-    background-color: #D8D8D8;
+.cards_container {
+  background-color: #d8d8d8;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+.pizza_card {
+  width: 360px;
+  background-color: white;
+  border-radius: 16px;
+}
+
+.pizza_photo_box {
+  width: 360px;
+  height: 216px;
+  background-image: url("./images/pizza_logo.png");
+  background-size: cover;
+  display: flex;
+  align-items: start;
+  justify-content: end;
+}
+
+.pizza_photo_box > div{
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    border-radius: 50%;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    height: 100vh;
+    justify-content: center;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
-.pizza_card{
-    width: 360px;
-    background-color: white;
-    border-radius: 16px;
+.pizza_heading {
+  color: #081f32;
+  font-family: DM Serif Display;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 25px;
+  font-weight: bold;
 }
 
-.pizza_photo_box{
-    width: 360px;
-    height: 216px;
+.heading_box {
+  margin-right: 25px;
+  margin-left: 25px;
+  display: flex;
 }
 
-.pizza_heading{
-    color: #081F32;
-    font-family: DM Serif Display;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 25px;
-    font-weight: bold;
+.part_pizza_box {
+  color: #6e798c;
+  font-size: 17px;
+  line-height: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.heading_box{
-    margin-right: 25px;
-    margin-left: 25px;
-    display: flex;
+.pizza_temp_box {
+  display: flex;
+  margin-left: 25px;
+  margin-right: 25px;
+  justify-content: space-between;
 }
 
-.part_pizza_box{
-    color: #6E798C;
-    font-size: 17px;
-    line-height: 25px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+.price_box {
+  justify-content: space-between;
+  display: flex;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
-.pizza_temp_box{
-    display: flex;
-    margin-left: 25px;
-    margin-right: 25px;
-    justify-content: space-between;
+.last_price_box {
+  color: #081f32;
+  font-size: 28px;
+  line-height: 25px;
+  padding-bottom: 25px;
 }
 
-.price_box{
-    justify-content: space-between;
-    display: flex;
-    margin-left: 25px;
-    margin-right: 25px;
+.first_price_box {
+  color: #f8593b;
+  font-size: 20px;
+  line-height: 25px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  text-decoration: line-through;
 }
 
-.last_price_box{
-    color: #081F32;
-    font-size: 28px;
-    line-height: 25px;
-    padding-bottom: 25px;
+.button_box {
+  background-color: #2ecc71;
+  color: white;
+  width: 114px;
+  height: 44px;
+  border-radius: 4px;
+  border: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-top: 8px;
 }
 
-.first_price_box{
-    color: #F8593B;
-    font-size: 20px;
-    line-height: 25px;
-    padding-bottom: 10px;
-    margin-top: 20px ;
+.fire_box {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #f8593b;
+  margin-top: 18px;
+  margin-left: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.button_box{
-    background-color: #2ECC71;
-    color: white;
-    width: 114px;
-    height: 44px;
-    border-radius: 4px;
-    border: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
-    letter-spacing: 4px;
-    text-align: center;
-    margin-top: 8px;
+.second_emoji_box {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #ffc22b;
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.fire_box{
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: #F8593B;
-    margin-top: 18px;
-    margin-left: 80px;
+.tortelini_card {
+  width: 360px;
+  height: 528px;
+  background-color: white;
+  border-radius: 16px;
 }
 
-
-.second_emoji_box{
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: #FFC22B;
-    margin-top: 18px;
+.fire_box > img {
+  width: 14px;
+  height: 14px;
 }
 
-
-.tortelini_card{
-    width: 360px;
-    height: 528px;
-    background-color: white;
-    border-radius: 16px;
+.second_emoji_box > img {
+  width: 14px;
+  height: 14px;
 }
